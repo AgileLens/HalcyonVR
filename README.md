@@ -25,6 +25,9 @@ ___
     
 ![Alt text](docs/assets.png?raw=true)
 
+https://github.com/AgileLens/ProjectCantina/assets/72276215/9458264c-75bb-44b0-ac0b-86c95f03d4b0
+
+
     
     
 ___
