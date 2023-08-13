@@ -6,7 +6,7 @@ Project Cantina is a community open-source project that aims to remake and prese
 
 This project is using Unreal Editor 5.3
 
--- [Reference Material Links](#reference-links) --
+-- [Reference Material Links](#reference-material-links) --
 ___
 ### Current Tasks:
 
@@ -20,8 +20,9 @@ ___
 
 ## Asset Creation:
 ### Models:
-    - Almost nothing but the basic furniture models in the Sublight Lounge, and Sabacc pieces have been started
+    - Only the basic furniture models in the Sublight Lounge, and Sabacc pieces have been started
     - Anything is up for grabs that anyone feels like making!
+    
 ![Alt text](docs/assets.png?raw=true)
 
     
