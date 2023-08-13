@@ -2,7 +2,7 @@
 
 # Project Cantina
 
-Project Cantina is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets no commercial outcome.
+Project Cantina is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets and no commercial outcome.
 
 This project is using Unreal Editor 5.3
 
