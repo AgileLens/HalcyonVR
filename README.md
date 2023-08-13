@@ -26,9 +26,8 @@ ___
     - Only the basic furniture models in the Sublight Lounge, and Sabacc pieces have been started
         - Basic stools
         - Bar stools
-        - Tables (Single, Double, Triple)
+        - Tables (single, double, triple)
         - Sabacc table, cards, die
-    - Anything is up for grabs that anyone feels like making!
     
 ![Alt text](docs/assets.png?raw=true)
 
