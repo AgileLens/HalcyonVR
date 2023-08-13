@@ -48,7 +48,7 @@ ___
 ### Deck 6
 ![Alt text](docs/deck-6.png?raw=true)
 
-    - Atrium:
+    - Atrium
     - Sublight Lounge
     - Bridge
     - Launch Pod Dock
