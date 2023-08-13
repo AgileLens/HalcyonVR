@@ -74,12 +74,12 @@ ___
 
 
 ## Logic/Interaction
-- WIP
+    - WIP
 
 ## Sabacc
-- Basic deck logic POC is done
-- Dealing POC is done
-- Dice rolling POC in progress
+    - Basic deck logic POC is done
+    - Dealing POC is done
+    - Dice rolling POC in progress
 
 https://github.com/AgileLens/ProjectCantina/assets/72276215/9458264c-75bb-44b0-ac0b-86c95f03d4b0
 
