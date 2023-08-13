@@ -17,15 +17,21 @@ ___
     - [Deck 4](#deck-4)
     - [Deck 6](#deck-6)
     - [Decks 4/5/7 Cabins](#deck-457-cabins)
+- [Logic/Interaction](#logicinteraction)
+- [Sabacc](#sabacc)
 
 ## Asset Creation:
 ### Models:
     - Only the basic furniture models in the Sublight Lounge, and Sabacc pieces have been started
+        - Basic stools
+        - Bar stools
+        - Tables (Single, Double, Triple)
+        - Sabacc table, cards, die
     - Anything is up for grabs that anyone feels like making!
     
 ![Alt text](docs/assets.png?raw=true)
 
-https://github.com/AgileLens/ProjectCantina/assets/72276215/9458264c-75bb-44b0-ac0b-86c95f03d4b0
+
 
 
     
@@ -65,6 +71,18 @@ ___
 
     - Single
     - Double
+
+
+## Logic/Interaction
+- WIP
+
+## Sabacc
+- Basic deck logic POC is done
+- Dealing POC is done
+- Dice rolling POC in progress
+
+https://github.com/AgileLens/ProjectCantina/assets/72276215/9458264c-75bb-44b0-ac0b-86c95f03d4b0
+
 
 ## Reference Material Links
 - https://disneyworld.disney.go.com/star-wars-galactic-starcruiser/overview/
