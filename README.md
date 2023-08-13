@@ -6,7 +6,10 @@ Project Cantina is a fan, community, and open-source project that aims to remake
 
 This project is using Unreal Editor 5.3
 
+If you would like to participate in building this with us, join our Slack [channel](https://join.slack.com/share/enQtNTczNDI0MTQ4NTYwMi0wNmY4NzkyM2QxZTg2MzdhZmMzNDY0YzQwYmI5NzViZWRiOTBjYjE0MzcwNTUzY2ZlMzEyYzJhNzdkYWM0NDli)!
+
 -- [Reference Material Links](#reference-material-links) --
+
 ___
 ### Current Tasks:
 
@@ -46,13 +49,15 @@ ___
 ## Level Design:
 
 ### Entrance/Transport Ship
-![Alt text](https://media.distractify.com/brand-img/IKIH-8Hmu/2160x1130/star-wars-galactic-starcruiser-price-2-1628192242520.png)
+![Alt text](https://www.parksavers.com/wp-content/uploads/2020/02/Galactic-Starcruiser-Entrance.jpg)
+```Concept Art ©Disney```
 
     - Entrance - Not started
     - Transport Ship - Not started
 
 ### Deck 6
 ![Alt text](docs/deck-6.png?raw=true)
+```Image via ©Disney```
 
     - Atrium - Not started
     - Sublight Lounge - Started, HEAVY WIP
@@ -62,6 +67,7 @@ ___
 
 ### Deck 4
 ![Alt text](docs/deck-4.png?raw=true)
+```Image via ©Disney```
 
     - The Chandrila Collection - Not started
     - Engineering Room - Not started
@@ -74,6 +80,7 @@ ___
 
 ### Deck 4/5/7 Cabins
 ![Alt text](docs/deck-4-cabins.png?raw=true)![Alt text](docs/deck-5-cabins.png?raw=true)![Alt text](docs/deck-7-cabins.png?raw=true)
+```Images via ©Disney```
 
     - Single - Not started
     - Double - Not started
