@@ -1,8 +1,8 @@
-![Alt text](docs/logo.png?raw=true)
+![Alt text](docs/logo_white.png?raw=true)
 
 # Project Cantina
 
-Project Cantina is a community open-source project that aims to remake and preserve as much as possible of the Disney Star Wars: Galactic Starcruiser experience in VR (and flatscreen).
+Project Cantina is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way.
 
 This project is using Unreal Editor 5.3
 
@@ -11,9 +11,10 @@ ___
 ### Current Tasks:
 
 - [Asset Creation](#asset-creation)
-- [Models](#models)
-- [Textures/Materials](#texturesmaterials)
+    - [Models](#models)
+    - [Textures/Materials](#texturesmaterials)
 - [Level Design](#level-design)
+    - [Entrance/Transport Ship](#entrancetransport-ship)
     - [Deck 4](#deck-4)
     - [Deck 6](#deck-6)
     - [Decks 4/5/7 Cabins](#deck-457-cabins)
@@ -43,34 +44,40 @@ ___
     - Create materials in Unreal
 
 ___
-### Level Design:
+## Level Design:
+
+### Entrance/Transport Ship
+![Alt text](https://media.distractify.com/brand-img/IKIH-8Hmu/2160x1130/star-wars-galactic-starcruiser-price-2-1628192242520.png)
+
+    - Entrance - Not started
+    - Transport Ship - Not started
 
 ### Deck 6
 ![Alt text](docs/deck-6.png?raw=true)
 
-    - Atrium
-    - Sublight Lounge
-    - Bridge
-    - Launch Pod Dock
-    - Turbolifts
+    - Atrium - Not started
+    - Sublight Lounge - Started, HEAVY WIP
+    - Bridge - Not started
+    - Launch Pod Dock - Not started
+    - Turbolifts - Not started
 
 ### Deck 4
 ![Alt text](docs/deck-4.png?raw=true)
 
-    - The Chandrila Collection
-    - Engineering Room
-    - Cargo Hold
-    - Lightsaber Training Pod
-    - Climate Simulator
-    - Crown of Corellia Dinning Room
-    - Transport Dock
-    - Brig
+    - The Chandrila Collection - Not started
+    - Engineering Room - Not started
+    - Cargo Hold - Not started
+    - Lightsaber Training Pod - Not started
+    - Climate Simulator - Not started
+    - Crown of Corellia Dinning Room - Not started
+    - Transport Dock - Not started
+    - Brig - Not started
 
 ### Deck 4/5/7 Cabins
 ![Alt text](docs/deck-4-cabins.png?raw=true)![Alt text](docs/deck-5-cabins.png?raw=true)![Alt text](docs/deck-7-cabins.png?raw=true)
 
-    - Single
-    - Double
+    - Single - Not started
+    - Double - Not started
 
 
 ## Logic/Interaction
