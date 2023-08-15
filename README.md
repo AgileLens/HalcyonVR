@@ -89,6 +89,15 @@ ___
 ## Logic/Interaction
     - WIP
 
+
+## Ship Access Panel
+    - Travel between different levels in VR using the ship's access console.
+https://github.com/AgileLens/ProjectCantina/assets/111258351/c0178c29-b105-42a1-ba2f-3b27f4f49283
+
+
+
+
+
 ## Sabacc
     - Basic deck logic POC is done
     - Dealing POC is done
