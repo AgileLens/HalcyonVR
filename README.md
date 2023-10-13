@@ -1,12 +1,12 @@
 ![Alt text](docs/logo_white.png?raw=true)
 
-# Project Cantina
+# Halcyon VR
 
-Project Cantina is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets and no commercial outcome.
+Halcyon VR is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets and no commercial outcome.
 
 This project is using Unreal Engine 5.3
 
-If you would like to participate in building this with us, join our Slack [channel](https://join.slack.com/share/enQtNTczNDI0MTQ4NTYwMi0wNmY4NzkyM2QxZTg2MzdhZmMzNDY0YzQwYmI5NzViZWRiOTBjYjE0MzcwNTUzY2ZlMzEyYzJhNzdkYWM0NDli)!
+If you would like to participate in building this with us, join our Discord [channel](https://discord.gg/6ngWuNPsMS)!
 
 -- [Reference Material Links](#reference-material-links) --
 
