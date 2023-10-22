@@ -50,6 +50,10 @@
 		{
 			"Name": "DatasmithRuntime",
 			"Enabled": true
+		},
+		{
+			"Name": "WebBrowserWidget",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
