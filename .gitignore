@@ -75,3 +75,6 @@ DerivedDataCache/*
 
 # Backup blend files
 *.blend1
+
+# OGG Files
+*.ogg
