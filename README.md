@@ -26,13 +26,13 @@ ___
 
 ## Asset Creation:
 ### Models:
-    - Only the basic furniture models in the Sublight Lounge, and Sabacc pieces have been started
-        - Basic stools
-        - Bar stools
-        - Tables (single, double, triple)
-        - Sabacc table, cards, die
-    
-![Alt text](docs/assets.png?raw=true)
+    - Only the Sublight Lounge models have been focused on currently.
+    - Please feel free to work on any asset you feel like you would like to contribute!
+
+        
+![image](https://github.com/AgileLens/HalcyonVR/assets/72276215/6eb8cb7d-4988-42c3-b09a-55a7b5fd4e49)
+
+<!-- ![Alt text](docs/assets.png?raw=true) -->
 
 
 
@@ -107,10 +107,10 @@ https://github.com/AgileLens/ProjectCantina/assets/72276215/9458264c-75bb-44b0-a
 
 
 ## Reference Material Links
-- https://disneyworld.disney.go.com/star-wars-galactic-starcruiser/overview/
+<!-- - https://disneyworld.disney.go.com/star-wars-galactic-starcruiser/overview/ -->
 - https://en.wikipedia.org/wiki/Star_Wars:_Galactic_Starcruiser
 - https://www.disneytouristblog.com/star-wars-galactic-starcruiser-resort-opening-hotel-reservations-pricing-info/
 - https://blogmickey.com/star-wars-galactic-starcruiser/day-two-report/#h-sublight-lounge
-- https://favoritegrampytravels.com/star-wars-galactic-star-cruiser-hotel/
+<!-- - https://favoritegrampytravels.com/star-wars-galactic-star-cruiser-hotel/ -->
 - https://www.google.com/search?q=star+wars+galactic+starcruiser&tbm=isch&hl=en&sa=X&ved=2ahUKEwic4aijnNmAAxXyMEQIHSi9CtgQBXoECAEQXQ&biw=1699&bih=1273
 - https://disney.urbantastebud.com/star-wars-galactic-starcruiser-review/
