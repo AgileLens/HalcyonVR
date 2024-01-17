@@ -5,33 +5,6 @@
 	"Description": "",
 	"Plugins": [
 		{
-			"Name": "OpenXR",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android"
-			]
-		},
-		{
-			"Name": "OpenXREyeTracker",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android"
-			]
-		},
-		{
-			"Name": "OpenXRHandTracking",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android"
-			]
-		},
-		{
 			"Name": "ModelingToolsEditorMode",
 			"Enabled": true
 		},
@@ -56,13 +29,17 @@
 			"Enabled": true
 		},
 		{
-			"Name": "RuntimeAudioImporter",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/81fd278e318e4235a028d3fdf46bf036"
-		},
-		{
 			"Name": "BlueprintFileUtils",
 			"Enabled": true
+		},
+		{
+			"Name": "OpenXR",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Linux",
+				"Android"
+			]
 		}
 	],
 	"TargetPlatforms": [
