@@ -49,8 +49,7 @@
 			"Name": "MetaHuman",
 			"Enabled": true,
 			"SupportedTargetPlatforms": [
-				"Win64",
-				"Android"
+				"Win64"
 			]
 		},
 		{
