@@ -33,23 +33,15 @@
 			"Enabled": true
 		},
 		{
-			"Name": "OpenXR",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Linux",
-				"Android"
-			]
-		},
-		{
 			"Name": "HairStrands",
 			"Enabled": true
 		},
 		{
 			"Name": "MetaHuman",
-			"Enabled": true,
+			"Enabled": false,
 			"SupportedTargetPlatforms": [
-				"Win64"
+				"Win64",
+				"Android"
 			]
 		},
 		{
@@ -77,6 +69,27 @@
 		},
 		{
 			"Name": "GPULightmass",
+			"Enabled": true
+		},
+		{
+			"Name": "OculusXR",
+			"Enabled": false,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8313d8d7e7cf4e03a33e79eb757bccba",
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android"
+			]
+		},
+		{
+			"Name": "MetaXRHaptics",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"Android"
+			]
+		},
+		{
+			"Name": "RigLogic",
 			"Enabled": true
 		}
 	],
