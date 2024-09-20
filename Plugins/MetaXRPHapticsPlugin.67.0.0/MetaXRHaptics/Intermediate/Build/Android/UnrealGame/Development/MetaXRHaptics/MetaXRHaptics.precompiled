@@ -1,0 +1,28 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o"
+	]
+}

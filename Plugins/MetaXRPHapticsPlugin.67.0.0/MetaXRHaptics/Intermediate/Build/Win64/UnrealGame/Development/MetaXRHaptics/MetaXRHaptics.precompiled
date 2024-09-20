@@ -1,0 +1,10 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHaptics.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.obj"
+	]
+}

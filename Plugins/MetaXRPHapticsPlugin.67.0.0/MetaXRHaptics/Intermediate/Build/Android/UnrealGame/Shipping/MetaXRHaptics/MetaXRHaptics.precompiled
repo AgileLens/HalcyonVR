@@ -1,0 +1,28 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\Module.MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHaptics.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsGameInstanceSubsystem.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsOpenXRExtension.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Shipping\\MetaXRHaptics\\MetaXRHapticsPlayerComponent.cpp.o"
+	]
+}
