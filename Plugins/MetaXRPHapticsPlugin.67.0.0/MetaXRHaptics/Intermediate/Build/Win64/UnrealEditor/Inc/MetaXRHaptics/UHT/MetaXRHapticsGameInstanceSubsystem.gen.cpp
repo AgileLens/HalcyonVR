@@ -30,10 +30,14 @@ struct Z_Construct_UClass_UMetaXRHapticsGameInstanceSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The game instance subsystem is responsible for initializing and uninitializing the native\n * library.\n */" },
+#endif
 		{ "IncludePath", "MetaXRHapticsGameInstanceSubsystem.h" },
 		{ "ModuleRelativePath", "Private/MetaXRHapticsGameInstanceSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The game instance subsystem is responsible for initializing and uninitializing the native\nlibrary." },
+#endif
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
@@ -80,14 +84,14 @@ UMetaXRHapticsGameInstanceSubsystem::~UMetaXRHapticsGameInstanceSubsystem() {}
 // End Class UMetaXRHapticsGameInstanceSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMetaXRHapticsGameInstanceSubsystem, UMetaXRHapticsGameInstanceSubsystem::StaticClass, TEXT("UMetaXRHapticsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UMetaXRHapticsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsGameInstanceSubsystem), 3174225180U) },
+		{ Z_Construct_UClass_UMetaXRHapticsGameInstanceSubsystem, UMetaXRHapticsGameInstanceSubsystem::StaticClass, TEXT("UMetaXRHapticsGameInstanceSubsystem"), &Z_Registration_Info_UClass_UMetaXRHapticsGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsGameInstanceSubsystem), 2738087205U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_2144281903(TEXT("/Script/MetaXRHaptics"),
-	Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_2239235156(TEXT("/Script/MetaXRHaptics"),
+	Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Private_MetaXRHapticsGameInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMetaXRHapticsEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0xBFBFACAB,
+				0x04A00418,
 				0x78E789B8,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeMetaXRHapticsEditor_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_MetaXRHapticsEditor.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MetaXRHapticsEditor(Z_Construct_UPackage__Script_MetaXRHapticsEditor, TEXT("/Script/MetaXRHapticsEditor"), Z_Registration_Info_UPackage__Script_MetaXRHapticsEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBFBFACAB, 0x78E789B8));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MetaXRHapticsEditor(Z_Construct_UPackage__Script_MetaXRHapticsEditor, TEXT("/Script/MetaXRHapticsEditor"), Z_Registration_Info_UPackage__Script_MetaXRHapticsEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x04A00418, 0x78E789B8));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

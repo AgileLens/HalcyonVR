@@ -129,9 +129,13 @@ struct Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetClipDuration_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the duration in seconds of the haptic clip.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the duration in seconds of the haptic clip." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
@@ -397,9 +401,13 @@ struct Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Play_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Start playback of the haptic clip set with the HapticClip property.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start playback of the haptic clip set with the HapticClip property." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -433,9 +441,13 @@ struct Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayOnController_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Start playback of the haptic clip set with the HapticClip property on the specified controller.\n\x09 *\n\x09 * Does not set the HapticController property.\n\x09 *\n\x09 * @param InController Which controller should play the haptic clip.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start playback of the haptic clip set with the HapticClip property on the specified controller.\n\nDoes not set the HapticController property.\n\n@param InController Which controller should play the haptic clip." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InController_MetaData[] = {
 		{ "NativeConst", "" },
@@ -488,13 +500,17 @@ struct Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayWithInputs_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Start playback of the haptic clip with custom inputs.\n\x09 *\n\x09 * This is a convenience method that sets the properties corresponding to the input parameters,\n\x09 * and then starts playback.\n\x09 *\n\x09 * @param InController Which controller should play the haptic clip.\n\x09 * @param InPriority Playback priority, ranging from 0 (low priority) to 1024 (high priority).\n\x09 * @param InAmplitude Amplitude scale, ranging from 0.0 to infinite.\n\x09 * @param InFrequencyShift Frequency shift, ranging from -1.0 to 1.0.\n\x09 * @param bInIsLooping Whether playback should loop\n\x09 */" },
+#endif
 		{ "CPP_Default_bInIsLooping", "false" },
 		{ "CPP_Default_InAmplitude", "1.000000" },
 		{ "CPP_Default_InFrequencyShift", "0.000000" },
 		{ "CPP_Default_InPriority", "512" },
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start playback of the haptic clip with custom inputs.\n\nThis is a convenience method that sets the properties corresponding to the input parameters,\nand then starts playback.\n\n@param InController Which controller should play the haptic clip.\n@param InPriority Playback priority, ranging from 0 (low priority) to 1024 (high priority).\n@param InAmplitude Amplitude scale, ranging from 0.0 to infinite.\n@param InFrequencyShift Frequency shift, ranging from -1.0 to 1.0.\n@param bInIsLooping Whether playback should loop" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InController_MetaData[] = {
 		{ "NativeConst", "" },
@@ -869,9 +885,13 @@ struct Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Stop_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Stops playback.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stops playback." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
@@ -931,27 +951,39 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "MetaXRHaptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Component for playing back haptic clips.\n *\n * After setting a haptic clip with the HapticClip property, playback can be started with\n * Play() or PlayWithInputs().\n *\n * The properties Amplitude, FrequencyScale, Priority and bIsLooping control playback.\n */" },
+#endif
 		{ "DisplayName", "MetaXR Haptics Player Component" },
 		{ "IncludePath", "MetaXRHapticsPlayerComponent.h" },
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Component for playing back haptic clips.\n\nAfter setting a haptic clip with the HapticClip property, playback can be started with\nPlay() or PlayWithInputs().\n\nThe properties Amplitude, FrequencyScale, Priority and bIsLooping control playback." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HapticClip_MetaData[] = {
 		{ "BlueprintGetter", "GetHapticClip" },
 		{ "BlueprintSetter", "SetHapticClip" },
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The haptic clip played back with this player.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The haptic clip played back with this player." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Controller_MetaData[] = {
 		{ "BlueprintGetter", "GetController" },
 		{ "BlueprintSetter", "SetController" },
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The controller on which the haptic clip will be played back.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The controller on which the haptic clip will be played back." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Priority_MetaData[] = {
 		{ "BlueprintGetter", "GetPriority" },
@@ -959,9 +991,13 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 		{ "Category", "MetaXR|Haptics" },
 		{ "ClampMax", "1024" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The playback priority of this player.\n\x09 *\n\x09 * When multiple players are playing at the same time on the same controller, only the player\n\x09 * with the highest priority will trigger vibrations.\n\x09 *\n\x09 * If multiple players have the same priority level, then the player that was started most\n\x09 * recently will trigger vibrations.\n\x09 *\n\x09 * The priority can be any integer value between 0 (low priority) and 1024 (high priority). The\n\x09 * default value is 512.\n\x09 *\n\x09 * The player's priority can be changed before and during playback.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The playback priority of this player.\n\nWhen multiple players are playing at the same time on the same controller, only the player\nwith the highest priority will trigger vibrations.\n\nIf multiple players have the same priority level, then the player that was started most\nrecently will trigger vibrations.\n\nThe priority can be any integer value between 0 (low priority) and 1024 (high priority). The\ndefault value is 512.\n\nThe player's priority can be changed before and during playback." },
+#endif
 		{ "UIMax", "1024" },
 		{ "UIMin", "0" },
 	};
@@ -970,9 +1006,13 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 		{ "BlueprintSetter", "SetAmplitude" },
 		{ "Category", "MetaXR|Haptics" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The amplitude scale, controlling the vibration intensity during playback.\n\x09 *\n\x09 * During playback, the individual amplitudes in the clip will be multiplied by the player's\n\x09 * amplitude. This changes how strong the vibration is. Amplitude values in a clip range from 0.0\n\x09 * to 1.0, and the result after applying the amplitude scale will be clipped to that range.\n\x09 *\n\x09 * An amplitude of 0.0 means that no vibration will be triggered, and an amplitude of 0.5 will\n\x09 * result in the clip being played back at half of its amplitude.\n\x09 *\n\x09 * Example: if you apply amplitude of 5.0 to a haptic clip and the following amplitudes are in the\n\x09 * clip: [0.2, 0.5, 0.1], the initial amplitude calculation would produce these values: [1.0, 2.5, 0.5]\n\x09 * which will then be clamped like this: [1.0, 1.0, 0.5]\n\x09 *\n\x09 * The property can be changed during active playback, in which case the amplitude is applied\n\x09 * immediately, with a small delay in the tens of milliseconds.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amplitude scale, controlling the vibration intensity during playback.\n\nDuring playback, the individual amplitudes in the clip will be multiplied by the player's\namplitude. This changes how strong the vibration is. Amplitude values in a clip range from 0.0\nto 1.0, and the result after applying the amplitude scale will be clipped to that range.\n\nAn amplitude of 0.0 means that no vibration will be triggered, and an amplitude of 0.5 will\nresult in the clip being played back at half of its amplitude.\n\nExample: if you apply amplitude of 5.0 to a haptic clip and the following amplitudes are in the\nclip: [0.2, 0.5, 0.1], the initial amplitude calculation would produce these values: [1.0, 2.5, 0.5]\nwhich will then be clamped like this: [1.0, 1.0, 0.5]\n\nThe property can be changed during active playback, in which case the amplitude is applied\nimmediately, with a small delay in the tens of milliseconds." },
+#endif
 		{ "UIMin", "0" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FrequencyShift_MetaData[] = {
@@ -981,9 +1021,13 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 		{ "Category", "MetaXR|Haptics" },
 		{ "ClampMax", "1.0" },
 		{ "ClampMin", "-1.0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The frequency shift, controlling the vibration frequency during playback.\n\x09 *\n\x09 * During playback, the individual frequencies in the clip will be shifted up or down. The\n\x09 * acceptable range of values is -1.0 to 1.0 inclusive. Once the frequencies in a clip have been\n\x09 * shifted, they will be clamped to the playable range of frequency values, i.e. zero to one.\n\x09 * Setting this property to 0.0 means that the frequencies will not be changed.\n\x09 *\n\x09 * Example: if you apply a frequency shift of 0.8 to a haptic clip and the following frequencies\n\x09 * are in the clip: [0.1, 0.5, 0.0], the initial frequency shift calculation will produce these\n\x09 * frequencies: [0.9, 1.3, 0.8] which will then be clamped like this: [0.9, 1.0, 0.8]\n\x09 *\n\x09 * The property can be changed during active playback, in which case the frequency shift is\n\x09 * applied immediately, with a small delay in the tens of milliseconds.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The frequency shift, controlling the vibration frequency during playback.\n\nDuring playback, the individual frequencies in the clip will be shifted up or down. The\nacceptable range of values is -1.0 to 1.0 inclusive. Once the frequencies in a clip have been\nshifted, they will be clamped to the playable range of frequency values, i.e. zero to one.\nSetting this property to 0.0 means that the frequencies will not be changed.\n\nExample: if you apply a frequency shift of 0.8 to a haptic clip and the following frequencies\nare in the clip: [0.1, 0.5, 0.0], the initial frequency shift calculation will produce these\nfrequencies: [0.9, 1.3, 0.8] which will then be clamped like this: [0.9, 1.0, 0.8]\n\nThe property can be changed during active playback, in which case the frequency shift is\napplied immediately, with a small delay in the tens of milliseconds." },
+#endif
 		{ "UIMax", "1.0" },
 		{ "UIMin", "-1.0" },
 	};
@@ -991,9 +1035,13 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 		{ "BlueprintGetter", "GetLooping" },
 		{ "BlueprintSetter", "SetLooping" },
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Whether playback is looped.\n\x09 *\n\x09 * When looping is enabled, clip playback will be repeated indefinitely.\n\x09 *\n\x09 * Looping can be enabled or disabled during playback.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MetaXRHapticsPlayerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether playback is looped.\n\nWhen looping is enabled, clip playback will be repeated indefinitely.\n\nLooping can be enabled or disabled during playback." },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HapticClip;
@@ -1008,22 +1056,22 @@ struct Z_Construct_UClass_UMetaXRHapticsPlayerComponent_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetAmplitude, "GetAmplitude" }, // 2284739854
-		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetClipDuration, "GetClipDuration" }, // 4058316671
+		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetClipDuration, "GetClipDuration" }, // 1521393990
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetController, "GetController" }, // 3006008221
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetFrequencyShift, "GetFrequencyShift" }, // 1824934077
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetHapticClip, "GetHapticClip" }, // 447844822
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetLooping, "GetLooping" }, // 2899636756
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_GetPriority, "GetPriority" }, // 2025798329
-		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Play, "Play" }, // 197493608
-		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayOnController, "PlayOnController" }, // 4043247470
-		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayWithInputs, "PlayWithInputs" }, // 1736549688
+		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Play, "Play" }, // 1073122997
+		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayOnController, "PlayOnController" }, // 2558137549
+		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_PlayWithInputs, "PlayWithInputs" }, // 4065695044
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetAmplitude, "SetAmplitude" }, // 3406348699
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetController, "SetController" }, // 3017946213
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetFrequencyShift, "SetFrequencyShift" }, // 3775637710
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetHapticClip, "SetHapticClip" }, // 483772127
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetLooping, "SetLooping" }, // 3843878799
 		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_SetPriority, "SetPriority" }, // 2466557945
-		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Stop, "Stop" }, // 4287696432
+		{ &Z_Construct_UFunction_UMetaXRHapticsPlayerComponent_Stop, "Stop" }, // 3057226965
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -1089,18 +1137,18 @@ UMetaXRHapticsPlayerComponent::~UMetaXRHapticsPlayerComponent() {}
 // End Class UMetaXRHapticsPlayerComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMetaXRHapticController_StaticEnum, TEXT("EMetaXRHapticController"), &Z_Registration_Info_UEnum_EMetaXRHapticController, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1144069035U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMetaXRHapticsPlayerComponent, UMetaXRHapticsPlayerComponent::StaticClass, TEXT("UMetaXRHapticsPlayerComponent"), &Z_Registration_Info_UClass_UMetaXRHapticsPlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsPlayerComponent), 1282354909U) },
+		{ Z_Construct_UClass_UMetaXRHapticsPlayerComponent, UMetaXRHapticsPlayerComponent::StaticClass, TEXT("UMetaXRHapticsPlayerComponent"), &Z_Registration_Info_UClass_UMetaXRHapticsPlayerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsPlayerComponent), 1311010511U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_227347774(TEXT("/Script/MetaXRHaptics"),
-	Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_308761150(TEXT("/Script/MetaXRHaptics"),
+	Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsPlayerComponent_h_Statics::EnumInfo));
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

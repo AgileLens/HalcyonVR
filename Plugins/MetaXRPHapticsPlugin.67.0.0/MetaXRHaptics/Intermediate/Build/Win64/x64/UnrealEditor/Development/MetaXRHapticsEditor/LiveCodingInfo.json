@@ -1,0 +1,12 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MetaXRHapticsEditor.cpp.obj": [
+			"MetaXRHapticClipFactory.gen.cpp.obj",
+			"MetaXRHapticsEditor.init.gen.cpp.obj",
+			"MetaXRHapticClipAssetTypeActions.cpp.obj",
+			"MetaXRHapticClipFactory.cpp.obj",
+			"MetaXRHapticsEditor.cpp.obj"
+		]
+	}
+}

@@ -38,13 +38,17 @@ struct Z_Construct_UFunction_UMetaXRHapticsFunctionLibrary_SpawnHapticsPlayerCom
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AdvancedDisplay", "3" },
 		{ "Category", "MetaXR|Haptics" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Spawns a UMetaXRHapticsPlayerComponent and attaches it to an Actor.\n\x09 *\n\x09 * Always spawn new player components with this method, Unreal's built-in \"Add Haptics SDK Player\"\n\x09 * will lead to initialization errors.\n\x09 *\n\x09 * When playback finishes, the component will *not* automatically destroy itself.\n\x09 *\n\x09 * @param ActorToAttachTo Actor to which this component will be attached to.\n\x09 * @param HapticClip Haptic clip to load.\n\x09 * @param Controller Controller used to play haptics.\n\x09 * @param Priority Playback priority, ranging from 0 (low priority) to 1024 (high priority).\n\x09 * @param Amplitude Amplitude scale, ranging from 0.0 to infinite.\n\x09 * @param FrequencyShift Frequency shift, ranging from -1.0 to 1.0.\n\x09 * @param bIsLooping Whether playback should loop.\n\x09 *\n\x09 * @return A UMetaXRHapticsPlayerComponent that plays back the haptic clip, and can be used to\n\x09 *         control playback.\n\x09 */" },
+#endif
 		{ "CPP_Default_Amplitude", "1.000000" },
 		{ "CPP_Default_bIsLooping", "false" },
 		{ "CPP_Default_FrequencyShift", "0.000000" },
 		{ "CPP_Default_Priority", "512" },
 		{ "ModuleRelativePath", "Public/MetaXRHapticsFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Spawns a UMetaXRHapticsPlayerComponent and attaches it to an Actor.\n\nAlways spawn new player components with this method, Unreal's built-in \"Add Haptics SDK Player\"\nwill lead to initialization errors.\n\nWhen playback finishes, the component will *not* automatically destroy itself.\n\n@param ActorToAttachTo Actor to which this component will be attached to.\n@param HapticClip Haptic clip to load.\n@param Controller Controller used to play haptics.\n@param Priority Playback priority, ranging from 0 (low priority) to 1024 (high priority).\n@param Amplitude Amplitude scale, ranging from 0.0 to infinite.\n@param FrequencyShift Frequency shift, ranging from -1.0 to 1.0.\n@param bIsLooping Whether playback should loop.\n\n@return A UMetaXRHapticsPlayerComponent that plays back the haptic clip, and can be used to\n        control playback." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Controller_MetaData[] = {
 		{ "NativeConst", "" },
@@ -154,7 +158,7 @@ struct Z_Construct_UClass_UMetaXRHapticsFunctionLibrary_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMetaXRHapticsFunctionLibrary_SpawnHapticsPlayerComponent, "SpawnHapticsPlayerComponent" }, // 739752964
+		{ &Z_Construct_UFunction_UMetaXRHapticsFunctionLibrary_SpawnHapticsPlayerComponent, "SpawnHapticsPlayerComponent" }, // 626666069
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -200,14 +204,14 @@ UMetaXRHapticsFunctionLibrary::~UMetaXRHapticsFunctionLibrary() {}
 // End Class UMetaXRHapticsFunctionLibrary
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics
+struct Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMetaXRHapticsFunctionLibrary, UMetaXRHapticsFunctionLibrary::StaticClass, TEXT("UMetaXRHapticsFunctionLibrary"), &Z_Registration_Info_UClass_UMetaXRHapticsFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsFunctionLibrary), 520829975U) },
+		{ Z_Construct_UClass_UMetaXRHapticsFunctionLibrary, UMetaXRHapticsFunctionLibrary::StaticClass, TEXT("UMetaXRHapticsFunctionLibrary"), &Z_Registration_Info_UClass_UMetaXRHapticsFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMetaXRHapticsFunctionLibrary), 2214022688U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_1579688681(TEXT("/Script/MetaXRHaptics"),
-	Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaXRHaptics_HostProject_Plugins_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_2501118343(TEXT("/Script/MetaXRHaptics"),
+	Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Nora_Desktop_HalcyonVR_Plugins_MetaXRPHapticsPlugin_67_0_0_MetaXRHaptics_Source_MetaXRHaptics_Public_MetaXRHapticsFunctionLibrary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
