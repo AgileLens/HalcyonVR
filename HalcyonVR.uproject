@@ -114,15 +114,6 @@
 				"Linux",
 				"Mac"
 			]
-		},
-		{
-			"Name": "Bridge",
-			"Enabled": false,
-			"SupportedTargetPlatforms": [
-				"Win64",
-				"Mac",
-				"Linux"
-			]
 		}
 	],
 	"TargetPlatforms": [
