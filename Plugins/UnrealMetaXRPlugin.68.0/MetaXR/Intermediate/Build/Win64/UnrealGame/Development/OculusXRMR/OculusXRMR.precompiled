@@ -1,0 +1,11 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\Module.OculusXRMR.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRFunctionLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_CastingCameraActor.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_PlaneMeshComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_Settings.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_State.cpp.obj"
+	]
+}

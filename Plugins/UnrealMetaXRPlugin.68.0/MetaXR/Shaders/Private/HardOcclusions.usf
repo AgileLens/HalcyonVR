@@ -1,0 +1,36 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "/Engine/Public/Platform.ush"
+
+#define NUM_VIEWS 2
+
+// PS Textures Parameters
+Texture2DArray EnvironmentDepthTexture;
+SamplerState EnvironmentDepthSampler;
+float2 DepthFactors;
+float4x4 ScreenToDepthMatrices[NUM_VIEWS];
+int DepthViewId;
+
+void HardOcclusionsPS(
+	noperspective float4 UVAndScreenPos : TEXCOORD0,
+	float4 SvPosition : SV_POSITION,
+#if INSTANCED_STEREO
+	in uint InstanceId : SV_InstanceID,
+#elif MOBILE_MULTI_VIEW
+	in uint ViewId : SV_ViewID,
+#endif
+	out float4 OutColor : SV_Target0,
+	out float OutDepth : SV_DEPTH)
+{
+#if INSTANCED_STEREO
+	uint ViewId = InstanceId & 1;
+#elif !MOBILE_MULTI_VIEW
+	uint ViewId = DepthViewId;
+#endif
+	float4 TexCoordH = mul(ScreenToDepthMatrices[ViewId], float4(UVAndScreenPos.x, 1.0f - UVAndScreenPos.y, 0.0, 1.0));
+	float3 TexCoord = float3(TexCoordH.x / TexCoordH.w, TexCoordH.y / TexCoordH.w, ViewId);
+	float InputDepthEye = EnvironmentDepthTexture.Sample(EnvironmentDepthSampler, TexCoord).r;
+	float DepthEye = InputDepthEye * DepthFactors.x + DepthFactors.y;
+	OutDepth = DepthEye;
+	OutColor = float4(0.0, 0.0, 0.0, 1.0);
+}

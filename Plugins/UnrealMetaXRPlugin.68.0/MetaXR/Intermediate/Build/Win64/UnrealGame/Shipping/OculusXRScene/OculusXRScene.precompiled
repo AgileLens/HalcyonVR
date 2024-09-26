@@ -1,0 +1,14 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\Module.OculusXRScene.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRScene.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneActor.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneAnchorComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneDelegates.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneEventHandling.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneFunctionLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneGlobalMeshComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\OculusXRScene\\OculusXRSceneSubsystem.cpp.obj"
+	]
+}

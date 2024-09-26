@@ -1,0 +1,26 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\Module.MRUtilityKit.1.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\Module.MRUtilityKit.2.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\Module.MRUtilityKit.3.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKit.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitAnchor.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitAnchorActorSpawner.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitBlobShadowComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitBPLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitData.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitDebugComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitDistanceMapGenerator.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitGeometry.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitGridSliceResizer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitGuardian.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitGuardianSpawner.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitLightDispatcher.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitPositionGenerator.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitRoom.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitSeatsComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitSerializationHelpers.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitShared.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\MRUtilityKit\\MRUtilityKitSubsystem.cpp.obj"
+	]
+}

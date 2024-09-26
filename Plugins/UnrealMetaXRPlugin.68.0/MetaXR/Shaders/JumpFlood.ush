@@ -1,0 +1,32 @@
+float4 MRUKJumpFlood(MaterialFloat2 UV, Texture2D Tex, SamplerState TexSampler , MaterialFloat StepSize)
+{
+    float BestDistance = 99999;
+    float BestDistance2 = 99999;
+    float2 BestUV = float2(-1,-1);
+    float2 BestUV2 = float2(-1.0, -1.0);
+
+    for (int y = -1; y <= 1; ++y)
+    {
+        for (int x = -1; x <= 1; ++x)
+        {
+            float2 UVOff = UV + float2(x,y) * StepSize;
+            float2 TempVaule = Texture2DSample(Tex, TexSampler, UVOff).xy;
+            float Dist = length(TempVaule - UV);
+            if ((TempVaule.x >= 0) && (TempVaule.y >= 0) && (Dist < BestDistance))
+            {
+                BestDistance = Dist;
+                BestUV = TempVaule;
+            }
+
+            float2 TempVaule2 = Texture2DSample(Tex, TexSampler, UVOff).zw;
+            float Dist2 = length(TempVaule2 - UV);
+            if ((TempVaule2.x >= 0) && (TempVaule2.y >= 0) && (Dist2 < BestDistance2))
+            {
+                BestDistance2 = Dist2;
+                BestUV2 = TempVaule2;
+            }
+        }
+    }
+
+    return float4(BestUV.x, BestUV.y, BestUV2.x, BestUV2.y);
+}

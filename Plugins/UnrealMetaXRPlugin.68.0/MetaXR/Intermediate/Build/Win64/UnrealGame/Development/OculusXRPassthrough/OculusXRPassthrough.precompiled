@@ -1,0 +1,14 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\Module.OculusXRPassthrough.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughColorLut.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughEventHandling.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughLayer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughLayerComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughSubsystem.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughXR.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPassthroughXRFunctions.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRPassthrough\\OculusXRPersistentPassthroughInstance.cpp.obj"
+	]
+}

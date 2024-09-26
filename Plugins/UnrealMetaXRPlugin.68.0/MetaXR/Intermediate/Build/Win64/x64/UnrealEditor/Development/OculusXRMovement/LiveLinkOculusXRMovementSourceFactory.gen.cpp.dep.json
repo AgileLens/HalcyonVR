@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrmovement\\uht\\livelinkoculusxrmovementsourcefactory.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrmovement\\definitions.oculusxrmovement.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrmovement\\private\\livelinkoculusxrmovementsourcefactory.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcefactory.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinksourcefactory.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrmovement\\uht\\livelinkoculusxrmovementsourcefactory.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

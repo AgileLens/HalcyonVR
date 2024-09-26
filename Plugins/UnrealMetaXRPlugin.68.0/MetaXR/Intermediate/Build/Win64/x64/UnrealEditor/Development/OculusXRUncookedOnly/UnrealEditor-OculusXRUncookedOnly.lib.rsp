@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OculusXRUncookedOnly.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"F:\GitHub\HalcyonVR\Plugins\UnrealMetaXRPlugin.68.0\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRUncookedOnly\BPNode_InitializePersistentPassthrough.cpp.obj"
+"F:\GitHub\HalcyonVR\Plugins\UnrealMetaXRPlugin.68.0\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRUncookedOnly\OculusXRUncookedOnlyModule.cpp.obj"
+"F:\GitHub\HalcyonVR\Plugins\UnrealMetaXRPlugin.68.0\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRUncookedOnly\BPNode_InitializePersistentPassthrough.gen.cpp.obj"
+"F:\GitHub\HalcyonVR\Plugins\UnrealMetaXRPlugin.68.0\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRUncookedOnly\OculusXRUncookedOnly.init.gen.cpp.obj"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"F:\GitHub\HalcyonVR\Plugins\UnrealMetaXRPlugin.68.0\MetaXR\Intermediate\Build\Win64\x64\UnrealEditor\Development\OculusXRUncookedOnly\UnrealEditor-OculusXRUncookedOnly.lib"

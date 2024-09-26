@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykiteditor\\private\\mrutilitykitgridsliceresizervisualization.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mrutilitykiteditor\\definitions.mrutilitykiteditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykiteditor\\public\\mrutilitykitgridsliceresizervisualization.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\componentvisualizer.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\engine\\public\\elements\\framework\\engineelementslibrary.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\engineelementslibrary.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\componentvisualizer.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykit\\public\\mrutilitykitgridsliceresizer.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\mrutilitykit\\uht\\mrutilitykitgridsliceresizer.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\plugins\\runtime\\proceduralmeshcomponent\\source\\proceduralmeshcomponent\\public\\proceduralmeshcomponent.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\plugins\\runtime\\proceduralmeshcomponent\\intermediate\\build\\win64\\unrealeditor\\inc\\proceduralmeshcomponent\\uht\\proceduralmeshcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

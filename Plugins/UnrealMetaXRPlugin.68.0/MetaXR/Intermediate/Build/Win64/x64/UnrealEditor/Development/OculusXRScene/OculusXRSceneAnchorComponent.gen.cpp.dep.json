@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrscene\\uht\\oculusxrsceneanchorcomponent.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrscene\\definitions.oculusxrscene.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrscene\\public\\oculusxrsceneanchorcomponent.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorcomponent.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxranchors\\public\\oculusxranchortypes.h",
+            "d:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\memory",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchortypes.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponent.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrscene\\uht\\oculusxrsceneanchorcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\private\\rules\\oculusxrpluginrules.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrprojectsetuptool\\definitions.oculusxrprojectsetuptool.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\private\\rules\\oculusxrpluginrules.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\public\\oculusxrsetuprule.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\oculusxrhmdruntimesettings.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\oculusxrhmdtypes.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmdtypes.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\oculusxrfunctionlibrary.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\ioculusxrhmdmodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\headmounteddisplay\\public\\iheadmounteddisplaymodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\headmounteddisplay\\public\\headmounteddisplaytypes.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\headmounteddisplay\\public\\imotioncontroller.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\imotioncontroller.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\headmounteddisplaytypes.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrfunctionlibrary.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmdruntimesettings.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrpstutils.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrprojectsetuptoolmodule.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrprojectsetuptool\\public\\ioculusxrprojectsetupmodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\gameprojectgeneration\\public\\gameprojectgenerationmodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\gameprojectgeneration\\public\\addtoprojectconfig.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\moduledescriptor.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\localizationdescriptor.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\versescope.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\projects\\public\\interfaces\\iprojectmanager.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

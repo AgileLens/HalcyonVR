@@ -1,0 +1,25 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "/Engine/Private/Common.ush"
+
+Texture2DArray InTexture;
+SamplerState InTextureSampler;
+int MipLevel;
+int ArraySlice;
+
+void MainMipLevel(
+	FScreenVertexOutput Input,
+	out float4 OutColor : SV_Target0
+	)
+{
+	OutColor = InTexture.SampleLevel(InTextureSampler, float3(Input.UV, ArraySlice), MipLevel);
+}
+
+void MainsRGBSourceMipLevel(
+	FScreenVertexOutput Input,
+	out float4 OutColor : SV_Target0
+	)
+{
+	OutColor = InTexture.SampleLevel(InTextureSampler, float3(Input.UV, ArraySlice), MipLevel);
+	OutColor.rgb = pow( OutColor.rgb, 1.0f / 2.2f );
+}

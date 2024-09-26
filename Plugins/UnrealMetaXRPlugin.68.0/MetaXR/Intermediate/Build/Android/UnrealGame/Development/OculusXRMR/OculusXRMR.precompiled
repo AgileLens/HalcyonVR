@@ -1,0 +1,32 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\Module.OculusXRMR.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRModule.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_CastingCameraActor.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_PlaneMeshComponent.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_Settings.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_State.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\Module.OculusXRMR.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRFunctionLibrary.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRModule.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_CastingCameraActor.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_PlaneMeshComponent.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_Settings.cpp.o",
+		"..\\..\\..\\a\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_State.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\Module.OculusXRMR.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRModule.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_CastingCameraActor.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_PlaneMeshComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_Settings.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_State.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\Module.OculusXRMR.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRFunctionLibrary.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMRModule.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_CastingCameraActor.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_PlaneMeshComponent.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_Settings.cpp.o",
+		"..\\..\\..\\x\\UnrealGame\\Development\\OculusXRMR\\OculusXRMR_State.cpp.o"
+	]
+}

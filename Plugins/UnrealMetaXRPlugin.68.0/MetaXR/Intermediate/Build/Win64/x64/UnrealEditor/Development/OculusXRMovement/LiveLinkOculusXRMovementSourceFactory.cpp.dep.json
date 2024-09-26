@@ -1,0 +1,27 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrmovement\\private\\livelinkoculusxrmovementsourcefactory.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrmovement\\definitions.oculusxrmovement.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrmovement\\private\\livelinkoculusxrmovementsourcefactory.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinksourcefactory.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinksourcefactory.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrmovement\\uht\\livelinkoculusxrmovementsourcefactory.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrmovement\\public\\ioculusxrmovementmodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\ilivelinkclient.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrefskeleton.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkrefskeleton.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkrole.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinktypes.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinktypes.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkrole.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\livelinkinterface\\public\\livelinkpresettypes.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\livelinkinterface\\uht\\livelinkpresettypes.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

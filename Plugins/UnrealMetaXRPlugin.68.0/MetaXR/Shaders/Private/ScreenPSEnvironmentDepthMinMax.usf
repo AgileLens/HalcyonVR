@@ -1,0 +1,104 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "/Engine/Private/Common.ush"
+
+Texture2DArray InTexture;
+SamplerState InTextureSampler;
+#if !ENABLE_MULTI_VIEW
+// Use shader constants on PC Link
+int ArraySlice;
+#endif
+
+void Main(
+	FScreenVertexOutput Input,
+#if ENABLE_MULTI_VIEW
+	// Use Multi View on Mobile
+	uint ArraySlice : SV_ViewID,
+#endif
+	out float4 OutColor : SV_Target0
+	)
+{
+	float3 Dimensions;
+	InTexture.GetDimensions(Dimensions.x, Dimensions.y, Dimensions.z);
+	float2 onePixelOffset = 1.0f / Dimensions.xy;
+
+	const uint NUM_SAMPLES = 5U;
+	const float2 offsets[NUM_SAMPLES] = {
+		float2(2.0f, 0.0f),
+		float2(0.0f, 2.0f),
+		float2(-2.0f, 0.0f),
+		float2(0.0f, 0.0f),
+		float2(0.0f, -2.0f)
+	};
+	float4 depths[NUM_SAMPLES];
+	float minDepth = 1.0f;
+	float maxDepth = 0.0f;
+	float depthSum = 0.0f;
+
+	// Find the local min and max, and collect all depth samples in the sampling grid
+	uint i;
+	UNROLL
+	for (i = 0U; i < NUM_SAMPLES; ++i) {
+		float2 uvSample = Input.UV + (offsets[i] + 0.5f) * onePixelOffset;
+		float4 depth4 = InTexture.Gather(InTextureSampler, float3(uvSample, ArraySlice));
+
+		depthSum += dot(depth4, float4(0.25f, 0.25, 0.25, 0.25));
+
+		float localMax = max(max(depth4.x, depth4.y), max(depth4.z, depth4.w));
+		float localMin = min(min(depth4.x, depth4.y), min(depth4.z, depth4.w));
+
+		maxDepth = max(maxDepth, localMax);
+		minDepth = min(minDepth, localMin);
+
+		depths[i] = depth4;
+	}
+
+	float maxSumDepth = 0.0f;
+	float minSumDepth = 0.0f;
+	float maxSumCount = 0.0f;
+	float minSumCount = 0.0f;
+	// Model the entire neighborhood as a bimodal distribution aggregated around the minimum and maximum values.
+	// Each side of the distribution (min and max) accepts values in a multiplicative range with respect to metric depth
+	// This will therefore aggregate all depth values until a maximum slope (depending also on the depth resolution)
+	static const float kMaxMetricDepthThrMultiplier = 0.85f;
+	static const float kMinMetricDepthThrMultiplier = 1.15f;
+	// Compute thresholds in window depth space:
+	//     Dmetric = 1 / (1 - Dwin)
+	//     Tmetric = kMultiplier * Dmetric
+	//     Twin = 1 - 1/Tmetric
+	// Therefore:
+	//     Twin = 1 - 1/(kMultiplier * (1 / (1 - Dwin))) = 1 - (1 - Dwin) / kMultiplier = 1 - 1/kMultiplier + Dwin / kMultiplier
+	float depthThrMax = (1.0f - 1.0f / kMaxMetricDepthThrMultiplier) + maxDepth * (1.0f / kMaxMetricDepthThrMultiplier);
+	float depthThrMin = (1.0f - 1.0f / kMinMetricDepthThrMultiplier) + minDepth * (1.0f / kMinMetricDepthThrMultiplier);
+
+
+	float avg = depthSum * (1.0f / float(NUM_SAMPLES));
+	if (depthThrMax < minDepth && depthThrMin > maxDepth) {
+		// Degenerate case: the entire neighborhood is within min-max thresholds for averaging
+		// therefore minAvg == maxAvg == avg.
+		// Directly output the encoded fragColor as:
+		// (1 - minAvg, 1 - maxAvg, avg - minAvg, maxAvg - minAvg)
+		OutColor = float4(1.0f - avg, 1.0f - avg, 0.0f, 0.0f);
+	} else {
+		// Compute average depths around the minimum and maximum values
+		UNROLL
+		for (i = 0U; i < NUM_SAMPLES; ++i) {
+			float4 maxMask = (depths[i] >= float4(depthThrMax, depthThrMax, depthThrMax, depthThrMax));
+			float4 minMask = (depths[i] <= float4(depthThrMin, depthThrMin, depthThrMin, depthThrMin));
+			minSumDepth += dot(minMask, depths[i]);
+			minSumCount += dot(minMask, float4(1.0f, 1.0f, 1.0f, 1.0f));
+			maxSumDepth += dot(maxMask, depths[i]);
+			maxSumCount += dot(maxMask, float4(1.0f, 1.0f, 1.0f, 1.0f));
+		}
+
+		float minAvg = minSumDepth / minSumCount;
+		float maxAvg = maxSumDepth / maxSumCount;
+
+		// Encoding the depth as a 4-channel RGBA image for improved numerical stability.
+		// minAvg and maxAvg are encoded in inverse range to use more floating point precision in the far field.
+		// The interpolation ratio between min and max is computed as: (avg - minAvg) / (maxAvg - minAvg)
+		// We can perform the differences here at higher precision
+		// We let the division later to the occlusion shader to preserve the bilinear interpolation properties as with minAvg and maxAvg.
+		OutColor = float4(1.0f - minAvg, 1.0f - maxAvg, avg - minAvg, maxAvg - minAvg);
+	}
+}

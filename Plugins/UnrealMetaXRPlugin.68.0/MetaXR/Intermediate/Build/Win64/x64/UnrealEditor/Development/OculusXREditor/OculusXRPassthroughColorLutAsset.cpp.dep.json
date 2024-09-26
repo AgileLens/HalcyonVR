@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxreditor\\private\\oculusxrpassthroughcolorlutasset.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxreditor\\definitions.oculusxreditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxreditor\\private\\oculusxrpassthroughcolorlutasset.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\assettools\\public\\assettypeactions_base.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\assettools\\public\\iassettools.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\assettools\\public\\assettypecategories.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\assettools\\public\\iassettypeactions.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\merge\\public\\merge.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailmanager.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailrenderer.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailrenderer.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailmanager.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\automatedassetimportdata.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\automatedassetimportdata.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assettools\\uht\\iassettools.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\assettools\\public\\assettoolsmodule.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\toolkits\\simpleasseteditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxreditor\\uht\\oculusxrpassthroughcolorlutasset.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrpassthrough\\public\\oculusxrpassthroughcolorlut.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrpassthrough\\uht\\oculusxrpassthroughcolorlut.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Oculus mobile plugin additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- init section is always evaluated once per architecture -->
+	<init>
+		<log text="Oculus mobile init"/>
+		<setBool result="bSupported" value="false"/>
+		<isArch arch="armeabi-v7a">
+			<setBool result="bSupported" value="true"/>
+		</isArch>
+		<isArch arch="arm64-v8a">
+			<setBool result="bSupported" value="true"/>
+		</isArch>
+
+		<!-- remove Oculus Signature Files by default -->
+		<setBool result="bRemoveOSIG" value="true"/>
+
+		<!-- determine the XrApi libraries that need to be loaded -->
+		<setStringFromProperty result="XrApi" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="XrApi" default="OVRPluginOpenXR"/>
+		<setBoolIsEqual result="bOVRPluginOpenXR" arg1="$S(XrApi)" arg2="OVRPluginOpenXR"/>
+		<setBoolIsEqual result="bNativeOpenXR" arg1="$S(XrApi)" arg2="NativeOpenXR"/>
+
+		<setBoolFromProperty result="bFocusAware" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bFocusAware" default="true"/>
+
+		<!-- get package for Meta Quest from AndroidRuntimeSettings -->
+		<setBoolFromProperty result="bPackageForMetaQuest" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="bPackageForMetaQuest" default="false"/>
+		<!-- Backcompat for deprecated oculus device target setting -->
+		<setBoolFromPropertyContains result="bPackageForQuest1" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="Quest"/>
+		<setBoolFromPropertyContains result="bPackageForQuest2" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="Quest2"/>
+		<setBoolFromPropertyContains result="bPackageForQuestPro" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="PackageForOculusMobile" contains="QuestPro"/>
+		<setBoolOr result="bPackageForMetaQuest" arg1="$B(bPackageForMetaQuest)" arg2="$B(bPackageForQuest1)"/>
+		<setBoolOr result="bPackageForMetaQuest" arg1="$B(bPackageForMetaQuest)" arg2="$B(bPackageForQuest2)"/>
+		<setBoolOr result="bPackageForMetaQuest" arg1="$B(bPackageForMetaQuest)" arg2="$B(bPackageForQuestPro)"/>
+
+		<!-- get supported oculus devices from OculusXRHMDRuntimeSettings -->
+		<setBoolFromPropertyContains result="bSupportMetaQuest" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="Quest"/>
+		<setBoolFromPropertyContains result="bSupportMetaQuest2" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="Quest2"/>
+		<setBoolFromPropertyContains result="bSupportMetaQuestPro" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="QuestPro"/>
+		<setBoolFromPropertyContains result="bSupportMetaQuest3" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SupportedDevices" contains="Quest3"/>
+
+		<setBoolFromProperty result="bShowLaunchImage" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="bShowLaunchImage" default="false"/>
+		<setBoolFromProperty result="bRequiresSystemKeyboard" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bRequiresSystemKeyboard" default="false"/>
+		<setStringFromProperty result="HandTrackingSupport" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="HandTrackingSupport" default="ControllersOnly"/>
+		<setStringFromProperty result="HandTrackingFrequency" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="HandTrackingFrequency" default="LOW"/>
+		<setStringFromProperty result="HandTrackingVersion" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="HandTrackingVersion" default="Default"/>
+		<setBoolIsEqual result="bHandTrackingVersionDefault" arg1="$S(HandTrackingVersion)" arg2="Default"/>
+		<setBoolIsEqual result="bHandTrackingVersionV1" arg1="$S(HandTrackingVersion)" arg2="V1"/>
+		<setBoolIsEqual result="bHandTrackingVersionV2" arg1="$S(HandTrackingVersion)" arg2="V2"/>
+		<setStringFromProperty result="ColorSpace" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="ColorSpace" default="Rec_709"/>
+		<setBoolIsEqual result="bColorSpaceUnmanaged" arg1="$S(ColorSpace)" arg2="Unmanaged"/>
+		<setBoolIsEqual result="bColorSpaceRec2020" arg1="$S(ColorSpace)" arg2="Rec_2020"/>
+		<setBoolIsEqual result="bColorSpaceRec709" arg1="$S(ColorSpace)" arg2="Rec_709"/>
+		<setBoolIsEqual result="bColorSpaceRiftCV1" arg1="$S(ColorSpace)" arg2="Rift_CV1"/>
+		<setBoolIsEqual result="bColorSpaceRiftS" arg1="$S(ColorSpace)" arg2="Rift_S"/>
+		<setBoolIsEqual result="bColorSpaceQuest" arg1="$S(ColorSpace)" arg2="Quest"/>
+		<setBoolIsEqual result="bColorSpaceP3" arg1="$S(ColorSpace)" arg2="P3"/>
+		<setBoolIsEqual result="bColorSpaceAdobeRGB" arg1="$S(ColorSpace)" arg2="Adobe_RGB"/>
+		<setBoolFromProperty result="bInsightPassthroughEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bInsightPassthroughEnabled" default="false"/>
+		<setBoolFromProperty result="bAnchorSupportEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bAnchorSupportEnabled" default="false"/>
+		<setBoolFromProperty result="bAnchorSharingEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bAnchorSharingEnabled" default="false"/>
+		<setBoolFromProperty result="bSceneSupportEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSceneSupportEnabled" default="false"/>
+		
+		<setBoolFromProperty result="bBoundaryVisibilitySupportEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bBoundaryVisibilitySupportEnabled" default="false"/>
+		<setBoolFromProperty result="bSupportEyeTrackedFoveatedRendering" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSupportEyeTrackedFoveatedRendering" default="false"/>
+		<setStringFromProperty result="ProcessorFavor" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="ProcessorFavor" default="FavorEqually"/>
+		<setBoolIsEqual result="bProcessorFavorEqually" arg1="$S(ProcessorFavor)" arg2="FavorEqually"/>
+		<setStringFromProperty result="SystemSplashBackground" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="SystemSplashBackground" default="Black"/>
+		<setBoolIsEqual result="bSystemSplashImageContextualPassthrough" arg1="$S(SystemSplashBackground)" arg2="Contextual"/>
+		<setBoolIsEqual result="bSystemSplashImageBlack" arg1="$S(SystemSplashBackground)" arg2="Black"/>
+
+		<!-- check for experimental feature support from config -->
+		<setBoolFromProperty result="bSupportExperimentalFeatures" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bSupportExperimentalFeatures" default="false"/>
+
+		<setBoolFromProperty result="bBodyTrackingEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bBodyTrackingEnabled" default="false"/>
+		<setBoolFromProperty result="bEyeTrackingEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bEyeTrackingEnabled" default="false"/>
+		<setBoolFromProperty result="bFaceTrackingEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bFaceTrackingEnabled" default="false"/>
+		<setBoolFromProperty result="bTileTurnOffEnabled" ini="Engine" section="/Script/OculusXRHMD.OculusXRHMDRuntimeSettings" property="bTileTurnOffEnabled" default="false"/>
+
+		<!-- get packaging for Oculus Mobile from ini and reset it if architecture not supported -->
+		<if condition="bPackageForMetaQuest">
+			<true>
+				<if condition="bSupported">
+					<true>
+						<if condition="Distribution">
+							<true>
+								<setBoolFromProperty result="bRemoveOSIG" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="bRemoveOSIG" default="false"/>
+								<if condition="bRemoveOSIG">
+									<true>
+										<log text="Oculus mobile entitlement checks are enabled"/>
+									</true>
+								</if>
+							</true>
+							<false>
+								<!-- if not using entitlement checks need to keep the osig files -->
+								<setBool result="bRemoveOSIG" value="false"/>
+							</false>
+						</if>
+					</true>
+					<false>
+						<setBool result="bPackageForMetaQuest" value="false"/>
+						<log text="Oculus mobile not supported for this architecture, disabled."/>
+					</false>
+				</if>
+			</true>
+		</if>
+
+		<if condition="bRemoveOSIG">
+			<true>
+				<log text="Oculus Signature Files (osig) will be removed from APK"/>
+			</true>
+		</if>
+
+		<!-- package for Oculus and for distribution -->
+		<setBool result="bOculusDistribution" value="false"/>
+		<if condition="bPackageForMetaQuest">
+			<true>
+				<isDistribution>
+					<setBool result="bOculusDistribution" value="true"/>
+					<log text="Building with Oculus mobile for distribution"/>
+				</isDistribution>
+			</true>
+		</if>
+
+		<!-- entitlements check if package Oculus for distribution and removing OSIGs -->
+		<setBoolAnd result="bEntitlementCheck" arg1="$B(bRemoveOSIG)" arg2="$B(bOculusDistribution)"/>
+	</init>
+
+	<!-- optional updates applied to AndroidManifest.xml -->
+	<androidManifestUpdates>
+		<if condition="bOculusDistribution">
+			<true>
+				<!-- distribution builds can install internal or SD card -->
+				<addAttribute tag="manifest" name="android:installLocation" value="auto"/>
+
+				<!-- update the GameActivity activity -->
+				<loopElements tag="activity">
+					<setStringFromAttribute result="activityName" tag="$" name="android:name"/>
+					<setBoolIsEqual result="bGameActivity" arg1="$S(activityName)" arg2="com.epicgames.unreal.GameActivity"/>
+					<if condition="bGameActivity">
+						<true>
+							<!-- do not want application to show in recents -->
+							<addAttribute tag="$" name="android:excludeFromRecents" value="true"/>
+
+							<!-- distribution builds should not be launched from home screen so remove LAUNCHER -->
+							<loopElements tag="category">
+								<setStringFromAttribute result="categoryName" tag="$" name="android:name"/>
+								<setBoolIsEqual result="bLauncher" arg1="$S(categoryName)" arg2="android.intent.category.LAUNCHER"/>
+								<if condition="bLauncher">
+									<true>
+										<removeElement tag="$"/>
+									</true>
+								</if>
+							</loopElements>
+
+							<!-- add INFO intent category instead -->
+							<setElement result="intentInfo" value="category"/>
+							<addAttribute tag="$intentInfo" name="android:name" value="android.intent.category.INFO"/>
+							<addElement tag="intent-filter" name="intentInfo"/>
+						</true>
+					</if>
+				</loopElements>
+			</true>
+		</if>
+		<setBool result="bOculus6Dof" value="$B(bPackageForMetaQuest)"/>
+		<if condition="bPackageForMetaQuest">
+			<true>
+				<if condition="bOculusDistribution">
+					<false>
+						<!-- Add Extlib Flag -->
+						<setElement result="extlib" value="meta-data"/>
+						<addAttribute tag="$extlib" name="android:name" value="com.oculus.extlib"/>
+						<addAttribute tag="$extlib" name="android:value" value="true"/>
+						<addElement tag="application" name="extlib"/>
+					</false>
+				</if>
+			</true>
+		</if>
+
+		<!-- Add Quest Specific Flags -->
+		<if condition="bOculus6Dof">
+			<true>
+				<addFeature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true"/>
+
+				<!-- Add Hand Tracking Flag -->
+				<setBoolIsEqual result="bHandsOnly" arg1="$S(HandTrackingSupport)" arg2="HandsOnly"/>
+				<setBoolIsEqual result="bControllersAndHands" arg1="$S(HandTrackingSupport)" arg2="ControllersAndHands"/>
+				<setBoolOr result="bEnableHandTracking" arg1="$B(bHandsOnly)" arg2="$B(bControllersAndHands)"/>
+				<if condition="bEnableHandTracking">
+					<true>
+						<addPermission android:name="com.oculus.permission.HAND_TRACKING"/>
+						<addFeature android:name="oculus.software.handtracking" android:required="$B(bHandsOnly)"/>
+					</true>
+				</if>
+				<!-- Add Passthrough flag-->
+				<if condition="bInsightPassthroughEnabled">
+					<true>
+						<addFeature android:name="com.oculus.feature.PASSTHROUGH" android:required="true"/>
+					</true>
+				</if>
+				<!-- Add Eye Tracking flags-->
+				<setBool result="bEyeTrackingFeature" value="false"/>
+				<setBoolOr result="bEyeTrackingFeature" arg1="$B(bEyeTrackingFeature)" arg2="$B(bSupportEyeTrackedFoveatedRendering)"/>
+				<setBoolOr result="bEyeTrackingFeature" arg1="$B(bEyeTrackingFeature)" arg2="$B(bEyeTrackingEnabled)"/>
+				<!-- Check for other features that require eye tracking here -->
+				<if condition="bEyeTrackingFeature">
+					<true>
+						<log text="Adding eye tracking feature and permission tags to manifest"/>
+						<addPermission android:name="com.oculus.permission.EYE_TRACKING"/>
+						<addFeature android:name="oculus.software.eye_tracking" android:required="false"/>
+					</true>
+				</if>
+				<!-- Add Body Tracking flags-->
+				<if condition="bBodyTrackingEnabled">
+					<true>
+						<log text="Adding body tracking feature and permission tags to manifest"/>
+						<addPermission android:name="com.oculus.permission.BODY_TRACKING"/>
+						<addFeature android:name="com.oculus.software.body_tracking" android:required="true"/>
+					</true>
+				</if>
+				<!-- Add Face Tracking flags-->
+				<if condition="bFaceTrackingEnabled">
+					<true>
+						<log text="Adding face tracking feature and permission tags to manifest"/>
+						<addPermission android:name="com.oculus.permission.FACE_TRACKING"/>
+						<addPermission android:name="android.permission.RECORD_AUDIO"/>
+						<addFeature android:name="oculus.software.face_tracking" android:required="true"/>
+					</true>
+				</if>
+				<!-- Add Experimental Features flag-->
+				<if condition="bSupportExperimentalFeatures">
+					<true>
+						<log text="Adding experimental feature tag to manifest"/>
+						<addFeature android:name="com.oculus.experimental.enabled" android:required="true"/>
+					</true>
+				</if>
+				<!-- Add Flags for Spatial Anchors-->
+				<if condition="bAnchorSupportEnabled">
+					<true>
+						<addPermission android:name="com.oculus.permission.USE_ANCHOR_API"/>
+					</true>
+				</if>
+				<!-- Add Flag for Shared Anchors -->
+				<if condition="bAnchorSharingEnabled">
+					<true>
+						<addPermission android:name="com.oculus.permission.IMPORT_EXPORT_IOT_MAP_DATA"/>
+					</true>
+				</if>
+				<!-- Add Flags for Scene-->
+				<if condition="bSceneSupportEnabled">
+					<true>
+						<addPermission android:name="com.oculus.permission.USE_SCENE"/>
+						<addPermission android:name="com.oculus.permission.SCENE_OBJECT_TRACKING"/>
+						<addPermission android:name="com.oculus.permission.PLANE_TRACKING"/>
+					</true>
+				</if>
+				
+				<if condition="bBoundaryVisibilitySupportEnabled">
+					<true>
+						<!-- Add Flags for boundary visibility-->
+						<addPermission android:name="com.oculus.permission.BOUNDARY_VISIBILITY"/>
+					</true>
+				</if>
+			</true>
+		</if>
+
+		<!-- Add Activity Specific Flags -->
+		<loopElements tag="activity">
+			<setStringFromAttribute result="activityName" tag="$" name="android:name"/>
+			<setBoolIsEqual result="bGameActivity" arg1="$S(activityName)" arg2="com.epicgames.unreal.GameActivity"/>
+			<if condition="bGameActivity">
+				<true>
+					<!-- Add VR Intent Filter, Permissions, and Features -->
+					<if condition="bPackageForMetaQuest">
+						<true>
+							<addFeature android:name="android.hardware.usb.host"/>
+						</true>
+					</if>
+
+					<!-- Quest Specific Activity Tags -->
+					<if condition="bOculus6Dof">
+						<true>
+							<!-- Add System Keyboard Flag -->
+							<if condition="bFocusAware">
+								<true>
+									<if condition="bRequiresSystemKeyboard">
+										<true>
+											<addFeature android:name="oculus.software.overlay_keyboard" android:required="false"/>
+										</true>
+									</if>
+								</true>
+							</if>
+						</true>
+					</if>
+				</true>
+			</if>
+		</loopElements>
+
+		<!-- Add Application Specific Flags -->
+		<loopElements tag="application">
+			<!-- Add SupportedDevices Tag -->
+			<setString result="devicesString" value=""/>
+			<if condition="bSupportMetaQuest">
+				<true>
+					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="quest|"/>
+				</true>
+			</if>
+			<if condition="bSupportMetaQuest2">
+				<true>
+					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="quest2|"/>
+				</true>
+			</if>
+			<if condition="bSupportMetaQuestPro">
+				<true>
+					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="cambria|"/>
+				</true>
+			</if>
+			<if condition="bSupportMetaQuest3">
+				<true>
+					<setStringAdd result="devicesString" arg1="$S(devicesString)" arg2="eureka|"/>
+				</true>
+			</if>
+			<setIntLength result="devicesStringLength" source="$S(devicesString)"/>
+			<setBoolIsGreater result="bDevicesSupported" arg1="$I(devicesStringLength)" arg2="0"/>
+			<if condition="bDevicesSupported">
+				<true>
+					<loopElements tag="meta-data">
+						<setStringFromAttribute result="nameString" tag="$" name="android:name"/>
+						<setBoolIsEqual result="bIsSupportedDevices" arg1="$S(nameString)" arg2="com.oculus.supportedDevices"/>
+						<if condition="bIsSupportedDevices">
+							<true>
+								<setStringFromAttribute result="existingDevicesString" tag="$" name="android:value"/>
+								<log text="Found existing Meta Quest supported devices tag: $S(existingDevicesString)"/>
+								<setStringAdd result="devicesString" arg1="$S(existingDevicesString)" arg2="|$S(devicesString)"/>
+								<setIntLength result="devicesStringLength" source="$S(devicesString)"/>
+								<removeElement tag="$"/>
+							</true>
+						</if>
+					</loopElements>
+					<setElement result="supportedDevices" value="meta-data"/>
+					<addAttribute tag="$supportedDevices" name="android:name" value="com.oculus.supportedDevices"/>
+					<setIntSubtract result="devicesStringLength" arg1="$I(devicesStringLength)" arg2="1"/>
+					<setStringSubstring result="devicesString" source="$S(devicesString)" start="0" length="$I(devicesStringLength)"/>
+					<log text="Adding Meta Quest supported devices tag: $S(devicesString)"/>
+					<addAttribute tag="$supportedDevices" name="android:value" value="$S(devicesString)"/>
+					<addElement tag="application" name="supportedDevices"/>
+				</true>
+			</if>
+
+			<!-- Add Hand Tracking Frequency -->
+			<if condition="bEnableHandTracking">
+				<true>
+					<setElement result="handTrackingFrequency" value="meta-data"/>
+					<addAttribute tag="$handTrackingFrequency" name="android:name" value="com.oculus.handtracking.frequency"/>
+					<addAttribute tag="$handTrackingFrequency" name="android:value" value="$S(HandTrackingFrequency)"/>
+					<addElement tag="application" name="handTrackingFrequency"/>
+					<if condition="bHandTrackingVersionDefault">
+						<false>
+							<if condition="bHandTrackingVersionV1">
+								<true>
+									<setElement result="handTrackingVersion" value="meta-data"/>
+									<addAttribute tag="$handTrackingVersion" name="android:name" value="com.oculus.handtracking.version"/>
+									<addAttribute tag="$handTrackingVersion" name="android:value" value="V1.0"/>
+									<addElement tag="application" name="handTrackingVersion"/>
+								</true>
+							</if>
+							<if condition="bHandTrackingVersionV2">
+								<true>
+									<setElement result="handTrackingVersion" value="meta-data"/>
+									<addAttribute tag="$handTrackingVersion" name="android:name" value="com.oculus.handtracking.version"/>
+									<addAttribute tag="$handTrackingVersion" name="android:value" value="V2.0"/>
+									<addElement tag="application" name="handTrackingVersion"/>
+								</true>
+							</if>
+						</false>
+					</if>
+				</true>
+			</if>
+
+
+			<!-- Add System Splash Image Background -->
+			<setString result="splashBackground" value=""/>
+			<if condition="bSystemSplashImageContextualPassthrough">
+				<true>
+					<setString result="splashBackground" value="passthrough-contextual"/>
+				</true>
+			</if>
+			<if condition="bSystemSplashImageBlack">
+				<true>
+					<setString result="splashBackground" value="black"/>
+				</true>
+			</if>
+			<setIntLength result="splashBackgroundLength" source="$S(splashBackground)"/>
+			<setBoolIsGreater result="bHasSplashBackground" arg1="$I(splashBackgroundLength)" arg2="0"/>
+			<if condition="bHasSplashBackground">
+				<true>
+					<setElement result="contextualPassthrough" value="meta-data"/>
+					<addAttribute tag="$contextualPassthrough" name="android:name" value="com.oculus.ossplash.background"/>
+					<addAttribute tag="$contextualPassthrough" name="android:value" value="$S(splashBackground)"/>
+					<addElement tag="application" name="contextualPassthrough"/>
+				</true>
+			</if>
+
+
+			<!-- Add Oculus Splash Screen -->
+			<if condition="bShowLaunchImage">
+				<true>
+					<!-- Add Oculus Splash Screen colorspace setting -->
+					<setElement result="oculusSplashColorspace" value="meta-data"/>
+					<addAttribute tag="$oculusSplashColorspace" name="android:name" value="com.oculus.ossplash.colorspace"/>
+					<if condition="bColorSpaceUnmanaged">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!Unmanaged"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceRec2020">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="Rec.2020"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceRec709">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="Rec.709"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceRiftCV1">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!RiftCV1"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceRiftS">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!RiftS"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceQuest">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!Quest"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceP3">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!P3"/>
+						</true>
+					</if>
+					<if condition="bColorSpaceAdobeRGB">
+						<true>
+							<addAttribute tag="$oculusSplashColorspace" name="android:value" value="!Adobe"/>
+						</true>
+					</if>
+					<addElement tag="application" name="oculusSplashColorspace"/>
+				</true>
+			</if>
+
+			<!-- Add tradeCpuForGpuAmount Amount -->
+			<if condition="bProcessorFavorEqually">
+				<false>
+					<setBoolIsEqual result="bFavorGPU" arg1="$S(ProcessorFavor)" arg2="FavorGPU"/>
+					<setBoolIsEqual result="bFavorCPU" arg1="$S(ProcessorFavor)" arg2="FavorCPU"/>
+					<setElement result="tradeCpuForGpuAmount" value="meta-data"/>
+					<addAttribute tag="$tradeCpuForGpuAmount" name="android:name" value="com.oculus.trade_cpu_for_gpu_amount"/>
+					<if condition="bFavorGPU">
+						<true>
+							<addAttribute tag="$tradeCpuForGpuAmount" name="android:value" value="1"/>
+						</true>
+					</if>
+					<if condition="bFavorCPU">
+						<true>
+							<addAttribute tag="$tradeCpuForGpuAmount" name="android:value" value="-1"/>
+						</true>
+					</if>
+					<addElement tag="application" name="tradeCpuForGpuAmount"/>
+				</false>
+			</if>
+			
+			<!-- Add Telemetry Project Id -->
+			<setElement result="telemetryProjectId" value="meta-data"/>
+			<addAttribute tag="$telemetryProjectId" name="android:name" value="com.oculus.telemetry.project_guid"/>
+			<setStringFromProperty result="projectID" ini="Game" section="/Script/EngineSettings.GeneralProjectSettings" property="ProjectID"/>
+			<addAttribute tag="$telemetryProjectId" name="android:value" value="$S(projectID)"/>
+			<addElement tag="application" name="telemetryProjectId"/>
+
+			<!-- Add Tile Turn Off -->
+			<setElement result="tileTurnOffEnabled" value="meta-data"/>
+			<addAttribute tag="$tileTurnOffEnabled" name="android:name" value="com.oculus.foveation.tile_turn_off"/>
+			<addAttribute tag="$tileTurnOffEnabled" name="android:value" value="$B(bTileTurnOffEnabled)"/>
+			<addElement tag="application" name="tileTurnOffEnabled"/>
+		</loopElements>
+
+	</androidManifestUpdates>
+
+	<!-- optional additions to proguard -->
+	<proguardAdditions>
+		<insert>
+-keep class com.oculus.** {
+*;
+}
+-keep class android.app.** {
+*;
+}
+		</insert>
+	</proguardAdditions>
+
+	<!-- optional files or directories to copy to Intermediate/Android/APK -->
+	<resourceCopies>
+		<isArch arch="arm64-v8a">
+			<if condition="bOVRPluginOpenXR">
+				<true>
+					<log text="Copying libopenxr_loader.so"/>
+					<copyFile src="$S(EngineDir)/Source/ThirdParty/Oculus/OculusOpenXRLoader/OculusOpenXRLoader/Lib/arm64-v8a/libopenxr_loader.so" dst="$S(BuildDir)/libs/arm64-v8a/libopenxr_loader.so"/>
+					<log text="Copying OpenXR libOVRPlugin.so"/>
+					<copyFile src="$S(PluginDir)/../ThirdParty/OVRPlugin/OVRPlugin/Lib/arm64-v8a/OpenXR/libOVRPlugin.so" dst="$S(BuildDir)/libs/arm64-v8a/libOVRPlugin.so"/>
+				</true>
+			</if>
+			<if condition="bNativeOpenXR">
+				<true>
+					<log text="Copying libopenxr_loader.so"/>
+					<copyFile src="$S(EngineDir)/Source/ThirdParty/Oculus/OculusOpenXRLoader/OculusOpenXRLoader/Lib/arm64-v8a/libopenxr_loader.so" dst="$S(BuildDir)/libs/arm64-v8a/libopenxr_loader.so"/>
+				</true>
+			</if>
+		</isArch>
+
+		<copyFile src="$S(PluginDir)/../ThirdParty/OVRPlugin/OVRPlugin/ExtLibs/SystemUtils.jar" dst="$S(BuildDir)/libs/SystemUtils.jar"/>
+
+		<if condition="bEntitlementCheck">
+			<true>
+				<copyFile src="$S(PluginDir)/../ThirdParty/OVRPlugin/OVRPlugin/ExtLibs/vrplatlib.jar" dst="$S(BuildDir)/libs/vrplatlib.jar"/>
+			</true>
+		</if>
+
+		<if condition="bRemoveOSIG">
+			<true>
+				<deleteFiles filespec="assets/oculussig_*"/>
+			</true>
+		</if>
+	</resourceCopies>
+
+	<!-- optional libraries to load in GameActivity.java before libUnreal.so -->
+	<soLoadLibrary>
+		<!-- need this if plugin enabled and supported architecture, even if not packaged for Oculus mobile -->
+		<if condition="bSupported">
+			<true>
+				<if condition="bOVRPluginOpenXR">
+					<true>
+						<loadLibrary name="openxr_loader" failmsg="openxr_loader library not loaded and may be required for Oculus VR."/>
+						<loadLibrary name="OVRPlugin" failmsg="OVRPlugin library not loaded and may be required for Oculus VR."/>
+					</true>
+				</if>
+				<if condition="bNativeOpenXR">
+					<true>
+						<loadLibrary name="openxr_loader" failmsg="openxr_loader library not loaded and may be required for Oculus VR."/>
+					</true>
+				</if>
+			</true>
+		</if>
+	</soLoadLibrary>
+</root>

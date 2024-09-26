@@ -1,0 +1,26 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\Module.MRUtilityKit.1.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\Module.MRUtilityKit.2.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\Module.MRUtilityKit.3.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKit.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitAnchor.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitAnchorActorSpawner.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitBlobShadowComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitBPLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitData.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitDebugComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitDistanceMapGenerator.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitGeometry.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitGridSliceResizer.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitGuardian.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitGuardianSpawner.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitLightDispatcher.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitPositionGenerator.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitRoom.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitSeatsComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitSerializationHelpers.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitShared.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Shipping\\MRUtilityKit\\MRUtilityKitSubsystem.cpp.obj"
+	]
+}

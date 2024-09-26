@@ -1,0 +1,20 @@
+{
+	"OutputFiles": [
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\Module.OculusXRAnchors.1.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\Module.OculusXRAnchors.2.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorBPFunctionLibrary.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorComponents.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorDelegates.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorLatentActions.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorManager.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchors.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorsModule.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorTypes.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRAnchorTypesPrivate.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRRoomLayoutManager.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRRoomLayoutManagerComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRSpatialAnchorComponent.cpp.obj",
+		"..\\..\\..\\x64\\UnrealGame\\Development\\OculusXRAnchors\\OculusXRSpatialAnchorManager.cpp.obj"
+	]
+}

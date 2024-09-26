@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxreditor\\uht\\oculusxrplatformtoolsettings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxreditor\\definitions.oculusxreditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxreditor\\public\\oculusxrplatformtoolsettings.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxreditor\\uht\\oculusxrplatformtoolsettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

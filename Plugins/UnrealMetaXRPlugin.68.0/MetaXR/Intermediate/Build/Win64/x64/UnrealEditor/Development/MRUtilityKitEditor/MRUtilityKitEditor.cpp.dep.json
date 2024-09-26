@@ -1,0 +1,37 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykiteditor\\private\\mrutilitykiteditor.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mrutilitykiteditor\\definitions.mrutilitykiteditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykiteditor\\public\\mrutilitykiteditor.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykit\\public\\mrutilitykitgridsliceresizer.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\mrutilitykit\\uht\\mrutilitykitgridsliceresizer.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykiteditor\\public\\mrutilitykitgridsliceresizervisualization.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\componentvisualizer.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\runtime\\engine\\public\\elements\\framework\\engineelementslibrary.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\engineelementslibrary.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\componentvisualizer.generated.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\mrutilitykit\\public\\mrutilitykittelemetry.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\oculusxrtelemetry.h",
+            "f:\\github\\halcyonvr\\plugins\\unrealmetaxrplugin.68.0\\metaxr\\source\\oculusxrhmd\\public\\oculusxrqpl.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\unrealedglobals.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\classes\\editor\\unrealedengine.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\ipackageautosaver.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolprovider.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangelist.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolchangeliststate.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontrolstate.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\isourcecontroloperation.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\developer\\sourcecontrol\\public\\sourcecontrolresultinfo.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\public\\componentvisualizermanager.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\source\\editor\\unrealed\\classes\\editor\\templatemapinfo.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\templatemapinfo.generated.h",
+            "f:\\github\\2024_oculusvr_unreal\\54\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\unrealedengine.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
