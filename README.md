@@ -6,7 +6,7 @@ Halcyon VR is a fan, community, and open-source project that aims to remake and 
 
 This project is using Unreal Engine 5.3
 
-If you would like to participate in building this with us, join our Discord [channel](https://discord.gg/6ngWuNPsMS)!
+If you would like to participate in building this with us, join our Discord [channel](https://discord.gg/SKwFxcERA8)!
 
 -- [Reference Material Links](#reference-material-links) --
 
