@@ -158,13 +158,6 @@
 				"Android",
 				"VisionOS"
 			]
-		},
-		{
-			"Name": "XRScribe",
-			"Enabled": true,
-			"SupportedTargetPlatforms": [
-				"Win64"
-			]
 		}
 	],
 	"TargetPlatforms": [
