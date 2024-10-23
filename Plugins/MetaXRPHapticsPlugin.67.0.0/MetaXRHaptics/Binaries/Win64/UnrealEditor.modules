@@ -1,8 +1,0 @@
-{
-	"BuildId": "33043543",
-	"Modules": 
-	{
-		"MetaXRHaptics": "UnrealEditor-MetaXRHaptics.dll",
-		"MetaXRHapticsEditor": "UnrealEditor-MetaXRHapticsEditor.dll"
-	}
-}
