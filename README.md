@@ -1,16 +1,15 @@
 ![Alt text](docs/logo_white.png?raw=true)
 
 # Galactic Starcruiser - The Halcyon VR Archive 
--- [Reference Material Links](#reference-material-links) --
 
-[Download for Windows 10 (PCVR compatible)](https://github.com/AgileLens/HalcyonVR/releases/tag/v0.0.4)
-[Join the App Lab test Channel](https://www.meta.com/s/7sFjKg3nF)
+-- [Download for Windows 10 (PCVR compatible)](https://github.com/AgileLens/HalcyonVR/releases/tag/v0.0.4) --
+-- [Join the App Lab test Channel](https://www.meta.com/s/7sFjKg3nF) --
 
-Join our [discord community](https://discord.gg/NxsGeYfd) for any questions, comments, or to join the archival effort!
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/unOS1mFxprM/0.jpg)](https://www.youtube.com/watch?v=unOS1mFxprM)
+[![Watch our Trailer
+](https://img.youtube.com/vi/unOS1mFxprM/0.jpg)](https://www.youtube.com/watch?v=unOS1mFxprM)
 
-If you would like to participate in building this with us, join our Discord [channel](https://discord.gg/SKwFxcERA8)!
+Join our [discord community](https://discord.gg/SKwFxcERA8) for any questions, comments, or to join the archival effort!
 
 -- [Reference Material Links](#reference-material-links) --
 
