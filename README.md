@@ -1,10 +1,14 @@
 ![Alt text](docs/logo_white.png?raw=true)
 
-# Halcyon VR
+# Galactic Starcruiser - The Halcyon VR Archive 
+-- [Reference Material Links](#reference-material-links) --
 
-Halcyon VR is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets and no commercial outcome.
+[Download for Windows 10 (PCVR compatible)](https://github.com/AgileLens/HalcyonVR/releases/tag/v0.0.4)
+[Join the App Lab test Channel](https://www.meta.com/s/7sFjKg3nF)
 
-This project is using Unreal Engine 5.4.4
+Join our [discord community](https://discord.gg/NxsGeYfd) for any questions, comments, or to join the archival effort!
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/unOS1mFxprM/0.jpg)](https://www.youtube.com/watch?v=unOS1mFxprM)
 
 If you would like to participate in building this with us, join our Discord [channel](https://discord.gg/SKwFxcERA8)!
 
@@ -21,3 +25,5 @@ https://halcyonarchive.notion.site/Halcyon-Compendium-df8ffe179a584ba099c763bc14
 <!-- - https://favoritegrampytravels.com/star-wars-galactic-star-cruiser-hotel/ -->
 - https://www.google.com/search?q=star+wars+galactic+starcruiser&tbm=isch&hl=en&sa=X&ved=2ahUKEwic4aijnNmAAxXyMEQIHSi9CtgQBXoECAEQXQ&biw=1699&bih=1273
 - https://disney.urbantastebud.com/star-wars-galactic-starcruiser-review/
+
+Halcyon VR is a fan, community, and open-source project that aims to remake and preserve as much as possible (that is allowed) of the Disney Star Wars Galactic Starcruiser experience in VR and flatscreen.  It is not associated with Disney in any way. This is a documentation effort using publicly available assets and no commercial outcome.
