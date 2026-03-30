@@ -2,7 +2,7 @@
 
 # Galactic Starcruiser - The Halcyon VR Archive 
 
--- [Download for Windows 10 (PCVR compatible)](https://github.com/AgileLens/HalcyonVR/releases/tag/v0.0.4) --
+-- [Download for Windows 10 (PCVR compatible)](https://github.com/AgileLens/HalcyonVR/releases/tag/v.0.0.5) --
 -- [Join the App Lab test Channel](https://www.meta.com/s/7sFjKg3nF) --
 
 
